@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="679a0ff6-4fb1-4d36-ad1d-b298fe1ee404" name="Changes" comment="" />
+    <list default="true" id="679a0ff6-4fb1-4d36-ad1d-b298fe1ee404" name="Changes" comment="Data e hora" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,5 +78,10 @@
       <updated>1683742708204</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Data e hora" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data e hora" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
