@@ -1,45 +1,19 @@
 package org.example;
 
-import java.util.Scanner;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
 
+        Order order = new Order(1080, new Date(), OrderStatus.PENDING_PAYMENT);
 
-        Scanner leitor = new Scanner(System.in);
+        System.out.println(order);
 
-        int m = leitor.nextInt();
-        int n = leitor.nextInt();
+        OrderStatus os1 = OrderStatus.DELIVERED;
 
-        int[][] matriz = new int[m][n];
+        OrderStatus os2 = OrderStatus.valueOf("DELIVERED");
 
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                matriz[i][j] = leitor.nextInt();
-            }
-        }
-
-        int x = leitor.nextInt();
-
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                if (matriz[i][j] == x) {
-                    System.out.println("Position " + i + "," + j + ":");
-                    if (j > 0) {
-                        System.out.println("Left: " + matriz[i][j - 1]);
-                    }
-                    if (i > 0) {
-                        System.out.println("Up: " + matriz[i - 1][j]);
-                    }
-                    if (j < matriz[i].length - 1) {
-                        System.out.println("Right: " + matriz[i][j + 1]);
-                    }
-                    if (i < matriz.length - 1) {
-                        System.out.println("Down: " + matriz[i + 1][j]);
-                    }
-                }
-            }
-        }
-        leitor.close();
+        System.out.println(os1);
+        System.out.println(os2);
     }
 }
